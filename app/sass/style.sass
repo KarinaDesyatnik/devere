@@ -1,0 +1,635 @@
+@import "vars"
+@import "fonts"
+
+body 
+	font-family: $os
+	font-weight: 400
+	font-size: 16px
+ul 
+	list-style: none
+a:hover 
+	text-decoration: none
+h1 
+	color: $brown
+	text-align: center
+	font-family: $ub
+	font-size: 60px
+	font-weight: 500
+	max-width: 712px
+	position: relative
+	z-index: 1
+	position: absolute
+	left: 50%
+	transform: translate(-50%)
+h2 
+	font-family: $ub 
+	font-size: 36px
+	color: #3D3D3D
+	padding-top: 17px
+	padding-bottom: 100px
+	text-align: center
+.line 
+	width: 75px 
+	height: 4px 
+	background: $orange
+	border-radius: 3px
+	margin: 0 auto
+
+header 
+	padding-top: 35px
+	.wrapper 
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 0 30px 
+.menu 
+	ul
+		display: flex
+		li 
+			padding: 0 20px
+			display: flex
+			align-items: center
+			a 
+				font-size: 18px
+				color: $grey
+			a:hover 
+				color: $orange
+.sign-in
+	background: $light
+	margin-left: 25px
+	cursor: pointer
+	padding: 14px 39px
+	border-radius: 3px
+	a
+		color: $orange
+		font-size: 16px
+		font-weight: 700 
+.menu-wrapper 
+	display: flex
+	align-items: center
+.btn_menu 
+	cursor: pointer
+	//position: absolute
+	//right: 10%
+	//top: 45px
+	display: none
+	margin-top: -10px
+	.btn_row 
+
+
+		display: block 
+		width: 25px
+		height: 3px 
+		background: $grey
+		margin-bottom: 3px
+	
+
+
+
+.btn_menu.active 
+	margin-top: -10px
+	.btn_row:nth-child(2)
+		display: none
+	.btn_row:first-child 
+		transform: rotate(-45deg)
+		margin-bottom: -3px
+	.btn_row:last-child 
+		transform: rotate(45deg)
+		//margin-top: -6px
+.main-screen 
+	margin-top: 79px
+	position: relative 
+	//min-height: 100vh
+	// background: url('../img/bg_header.svg')	
+	// background-repeat: no-repeat
+	// background-size: contain
+	img 
+		width: 100%
+		//position: absolute
+		top: 0
+		left: 0
+		margin-bottom: 74px
+
+.search
+	position: absolute
+	bottom: 0
+	width: 100%
+
+	.wrapper
+		background: #fff
+		min-height: 148px
+		width: 100%
+		padding-left: 20px
+		box-shadow: 8px 8px 90px rgba(0,0,0,0.15)
+
+
+	.col-md-4,
+	.col-md-2
+		display: flex
+		// align-items: center
+		justify-content: center
+		min-height: 148px
+		flex-direction: column
+		padding-left: 40px
+		
+		.title 
+			font-size: 18px 
+			font-family: $ub
+			font-weight: 500px
+			color: #473625
+			padding-bottom: 20px
+			
+		input 
+			padding-left: 33px
+			width: 100%
+			height: 100%
+			border: none
+			outline: none
+		input::-webkit-input-placeholder
+			color: #CDCFD7
+		input::-moz-placeholder
+			color: #CDCFD7
+
+		select 
+			padding-left: 33px
+			padding-right: 40px
+			border: none
+			outline: none
+			appearance: none
+			-moz-appearance: none
+			-webkit-appearance: none
+			cursor: pointer
+			color: #CDCFD7
+		.input-wrapper 
+			position: relative
+		// .input-wrapper:before 
+		// 	font-family: $icon
+		// 	content: "\e905"
+		// 	position: absolute
+		// 	left: 5px
+	.col-md-2:first-child 
+		.input-wrapper:before
+			font-family: $icon
+			content: "\e904"
+			position: absolute
+			left: 5px
+			color: #CDCFD7
+	.col-md-2:last-child 
+		padding-left: 0
+	.col-md-4
+		.input-wrapper:before
+			content: url("../img/calend.svg")
+			position: absolute
+			left: 5px 
+			height: 18px
+			width: 18px
+		.input-wrapper:after 
+			font-family: $icon
+			content: "\e903"
+			position: absolute
+			right: 110px
+			z-index: 0
+			pointer-events: none
+			color: #CDCFD7
+	.col-md-2:last-child 
+
+		
+		button
+			background: $orange
+			width: 100%
+			height: 100%
+			border: none
+			outline: none
+			cursor: pointer
+			color: #fff
+			font-weight: 700
+			box-shadow: -30px 0px 90px rgba(0,0,0,0.15)
+	.col-md-2:nth-child(2),
+	.col-md-2:nth-child(3),
+	.col-md-4
+		border-left: 2px solid #CDCFD7
+		margin: 35px 0
+		min-height: 78px
+.ui-datepicker-trigger 
+	height: 20px
+	width: 20px !important
+	margin-bottom: 0 !important
+	position: absolute
+	left: 4px !important
+	// top: 3px !important
+	cursor: pointer !important	
+			
+.about 
+	text-align: center
+	padding-top: 113px
+	padding-bottom: 108px
+	.title
+		padding-top: 30px
+		font-family: $ub 
+		font-size: 24px
+		color: $brown
+	p 
+		color: $grey
+		line-height: 2
+.listings 
+	padding-top: 117px 
+	padding-bottom: 93px
+	background: #F8F8F9
+
+	.col-md-4
+		
+		
+		.wrapper 
+			margin: 0 15px
+			background: #fff
+			padding: 5px 5px
+			padding-bottom: 25px
+
+		img 
+			width: 100%
+		.description 
+			padding: 0 10px
+		.title
+			font-size: 24px
+			font-family: $ub 
+			font-weight: 500
+			padding-top: 24px
+			padding-bottom: 21px
+			color: #473625
+		.price-box 
+			display: flex
+			justify-content: space-between
+		.category 
+			display: flex
+			justify-content: space-between
+			padding-top: 25px
+			.category-item 
+				font-size: 12px
+				color: #777
+				background: #F8F8F8
+				padding: 5px 10px
+
+
+		.rate 
+			font-size: 20px
+			line-height: 1
+			color: $orange
+			font-weight: bold
+		.price 
+			color: #00B757
+			span 
+				font-size: 20px
+				line-height: 1
+				font-weight: bold
+	.btn 
+		width: 230px 
+		height: 70px 
+		background: $light
+		display: flex
+		justify-content: center
+		align-items: center
+		border-radius: 5px
+		margin: 0 auto
+		cursor: pointer
+		margin-top: 93px
+
+		a 
+			color: $orange
+			font-family: $ub 
+			font-size: 22px 
+			font-weight: 500
+.testimonials 
+	padding-top: 135px
+	padding-bottom: 160px
+	text-align: center
+	.container-fluid
+		background: url('../img/Map.svg')
+		background-repeat: no-repeat
+		background-size: cover
+		width: 80%
+		min-height: 100vh
+		p
+			margin-top: 70px
+			font-size: 18px 
+			font-weight: 600i
+			font-style: italic
+			color: $grey
+	
+	.col-md-6 
+		.wrapper
+			box-shadow: 0px 20px 50px rgba(0,0,0,0.29)
+			height: 105px
+			width: 105px
+			border-radius: 50%
+			margin: 40px auto
+			
+
+
+
+	.photo 
+		display: flex
+		.wrapper
+			border-radius: 50%
+			box-shadow: 0px 20px 50px rgba(0,0,0,0.29)
+	.col-md-2
+		.photo:first-child 
+			// padding-right: 40px
+		.photo:nth-child(2)
+			padding: 40px 0px
+			padding-top: 50px
+		.photo:nth-child(3)
+			margin-right: -50px
+			// padding-left: 30px
+
+		.photo:nth-child(odd)
+			justify-content: flex-end
+		.photo:last-child
+			padding-left: 20px
+			padding-top: 40px
+		
+	.col-md-3
+		.photo:first-child 
+			justify-content: space-between
+			.wrapper:last-child 
+				height: 80px
+			
+		.photo:nth-child(2)
+			justify-content: flex-end
+			padding-top: 100px
+			padding-right: 10px
+			padding-bottom: 70px
+		.photo:last-child 
+			justify-content: center
+.video 
+	padding-top: 115px
+	background: #F8F8F9
+	padding-bottom: 138px
+	h2 
+		padding-bottom: 30px
+	p 
+		max-width: 774px
+		padding-bottom: 117px
+		text-align: center
+		margin: 0 auto
+	.col-md-6 
+		img 
+			width: 100%
+
+	.movie_container 
+		position: relative
+
+		a 
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			.transparent-cercle
+				height: 105px 
+				width: 105px 
+				opacity: 0.5 
+				background: #fff
+				border-radius: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+
+			.whit-cercle
+				height: 65px 
+				width: 65px 				
+				background: #fff
+				border-radius: 50%
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+			.whit-cercle:before 
+				font-family: $icon
+				color: $orange
+				content: "\ea1c"
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+				font-size: 20px
+	.col-md-6:first-child
+		.movie_container 
+			height: 100%
+			img 
+				height: 100%
+
+	.col-md-6:last-child 
+		display: flex
+		flex-direction: column 
+		justify-content: space-between
+		.transparent-cercle 
+			height: 60px 
+			width: 60px
+		.whit-cercle 
+			height: 37px 
+			width: 37px
+		.whit-cercle:before 
+			font-size: 14px
+		.movie_container:first-child
+			padding-bottom: 37px
+.secure 
+	padding: 133px 0
+
+	.col-md-4 
+		
+		text-align: center
+		
+		.wrapper
+			padding-top: 40px
+			border: 1px solid #E8E8E8
+			min-height: 316px
+		.title 
+			font-size: 20px
+			font-weight: 600
+			color: grey
+		img 
+			padding-bottom: 43px
+		.btn 
+			
+			width: 122px
+			height: 40px 
+			background: $light 
+			display: flex
+			justify-content: center
+			align-items: center
+			margin: 0 auto
+			margin-top: 41px
+			cursor: pointer
+			a 
+				color: orange
+
+	.col-md-4:first-child 
+		.wrapper
+			background: $orange	
+		// padding-top: 40px
+		.title	
+			color: #fff 
+		img 
+			padding-bottom: 50px
+.white-popup-block 
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	video 
+		width: 100%
+.mail 
+	padding: 97px 0
+	background: $orange
+	.line 
+		background: #fff
+	h2 
+		color: #fff
+		padding-bottom: 32px
+	p 
+		color: #fff
+		text-align: center
+	.form-box 
+		min-height: 170px 
+		padding: 0 57px
+		background: #fff
+		width: 100%
+		margin-top: 63px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		img 
+			margin-top: -50px
+		p 
+			color: $grey
+			text-align: left
+			font-size: 18px
+			line-height: 2
+			padding-top: 10px
+		input 
+			width: 415px
+			height: 60px
+			background: #F8F8F9
+			border: 1px solid #E8E8E8
+			border-radius: 10px
+			padding-left: 31px
+			font-size: 18px
+		button 
+			width: 165px 
+			height: 60px
+			border-radius: 10px 
+			background: $orange
+			border: none
+			color: #fff
+			font-size: 18px 
+			font-weight: 600
+footer
+	background: url('../img/footer_bg.svg')
+	padding-top: 169px
+	padding-bottom: 30px
+	background-repeat: no-repeat
+	color: $grey
+	.logo 
+		img 
+			width: 100%
+	.soc-icon 
+		margin-top: 53px
+	.cercle 
+		height: 46px 
+		width: 46px 
+		border-radius: 50%
+		border: 1px solid $grey
+		margin-bottom: 20px
+		cursor: pointer
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		a:before
+			font-family: $icon
+			color: #707070
+			font-size: 20px
+		.phone:before 
+			content: "\e901"
+		.whatsApp:before
+			content: "\e900"
+		.email:before
+			content: "\e902"
+		.facebook:before
+			content: "\ea90"
+		.instagram:before
+			content: "\ea92"
+		.twitter:before
+			content: "\ea96"
+
+
+	.cercle:hover 
+		background: $orange
+		border: none
+	.cercle:hover a:before
+		color: #fff
+	.title 
+		font-size:  24px 
+		font-family: $ub
+		font-weight: 500
+		color: #3D3D3D
+		margin-bottom: 15px
+	.col-md-4
+		.wrapper 
+			margin-left: 30px
+
+	.col-md-4 .col-md-6
+		display: flex
+		flex-direction: column
+		a 
+			padding: 5px 0
+			color: $grey
+	.col-md-3 
+		p
+			padding: 5px 0
+			margin-bottom: 0
+		a 
+			display: block
+			color: $grey
+			padding: 5px 0
+	.bottom-footer 
+		padding-top: 105px
+		display: flex
+		justify-content: space-between
+		a 
+			color: $grey
+			padding-left: 20px
+
+
+
+		
+
+
+	
+
+
+
+
+
+
+
+
+
+		
+
+
+
+				
+			
+
+		
+
+
+
+
+
+
+
+
+
+
+@import "media"
